@@ -1,0 +1,17 @@
+﻿<template>
+	<h1><span class="glyphicon glyphicon-camera"></span> Camera</h1>
+
+	<p>
+		<button click.delegate="start()" type="button"><span class="glyphicon glyphicon-film"></span> Start</button>
+		<button click.delegate="stop()" type="button"><span class="glyphicon glyphicon-stop"></span> Stop</button>
+	</p>
+
+	<video ref="videoElement" id="myVideo" width="300" height="200" controls autoplay></video>
+	<label id="videoError"></label>
+
+	<br>
+
+	<p><button id="snapshot" click.delegate="snapshot()" type="button" hidden><span class="glyphicon glyphicon-camera"></span>Snapshot</button></p>
+	<canvas width="300" height="200"></canvas>
+
+</template>
