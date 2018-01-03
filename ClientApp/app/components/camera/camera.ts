@@ -61,11 +61,6 @@ export class Camera {
 
 }
 
-export class ChatMessage {
-	SenderName: string;
-	Text: string;
-}
-
 interface Navigator {
 	getUserMedia(
 		options: { video?: boolean; audio?: boolean; },
